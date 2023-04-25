@@ -1,121 +1,81 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posionamento do Elemento div</title>
-    <style type="text/css">
-        .divs {
-            width: 200px;
-            height: 300px;
-        }
-
-        .divAbsolute {
-            background-color: darkcyan;
-            position: absolute;
-            top: 120px;
-            left: 300px;
-        }
-
-        .divRelative {
-            background-color: burlywood;
-            position: relative;
-            top: 120px;
-            left: 300px;
-        }
-
-        .divFixed {
-            background-color: chocolate;
-            position: fixed;
-            top: 200px;
-            right: 200px;
-        }
-
-        .divStatic {
-            background-color: darkgreen;
-            position: static;
-            top: 300px;
-        }
-
-        .divSticky {
-            background-color: grey;
-            position: sticky;
-            top: 0px;
-            left: 400px;
-        }
-
-        .divEsquerda {
-            background-color: blueviolet;
-            color: white;
-            float: right
-        }
-
-        .divDireita {
-            background-color: darkblue;
-            color: white;
-            float: right;
-        }
-
-        .dicAlignCenter {
-            margin: 0 auto;
-            width: 50%;
-            height: 300px;
-            background-color: darkolivegreen;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        .caixa {
-            width: 100%;
-            height: 100vh;
-            background: red;
-            display: flex;
-            align-content: space-around;
-        }
-
-        .esquerda {
-            width: 15%;
-            height: 100vh;
-            background: green;
-        }
-
-        .meio {
-            width: 70%;
-            height: 100vh;
-            background: grey;
-        }
-
-        .direita {
-            width: 15%;
-            height: 100vh;
-            background: blue;
-        }
-    </style>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Italian Pizzaria</title>
 </head>
+
+<link href="css/menu.css" type="text/css" rel="stylesheet" media="all"><!--LINKAR O ARQUIVO CSS-->
+<link href="css/estilos.css" type="text/css" rel="stylesheet" media="all"><!--LINKAR O ARQUIVO CSS-->
+
 <body>
 
-    <div class="caixa">
-        <div class="esquerda"></div>
-        <div class="meio"></div>
-        <div class="direita"></div>
+    <header>
+        <!--conciste na parte que contém as informações suplementares colocados no começo de um bloco de dados que estão sendo armazenados ou transmitidos, usualmente por e-mail ou em pacotes dos dados           -->
+        <img ="logo" src="img/logo.png" width="150" height="150">
+    </header>
+
+    <nav>
+        <!--Cria área de navegação-->
+        <ul>
+            <!--Lista não ordenada-->
+            <li><a href="index.html">Home</a></li><!--TAG lista-->
+            <li><a href="sabores.html">Sabores</a></li>
+            <li><a href="filiais.html">Filiais</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!--section é utilizada para marcar as seções de conteúdo de página. Com Esse elemento agrupamos de forma lógica nosso conteúdo, separando a informação em áreas diferentes-->
+
+
+        <img src="img/07.jpg" width="1024" height="400">
+
+        <hr><!--Insere linha-->
+
+       
+
+        <div id="dest1">
+            <img src="img/01.jpg" width="300" height="200">
+            <h3>Nossos Rodízios</h3><!--Tamanho do título-->
+
+            <p>
+                <!--formação de parágrafo-->Fazemos do seu evento uma experiencia única trazida da Europa, mesclando estilo clássico Europeu e modernista Brasileiro.
+ A Italian Pizzaria leva toda a estrutura necessária para montar um rodízio de pizza aonde você quiser. </p>
         </div>
 
+        <div id="dest1">
+            <img src="img/03.jpg" width="300" height="200">
 
-<!--
-    
-    <h1> Formas de posicionamento</h1>
-    <div class="divs divSticky">Posicionamento sticky</div>
-    <div class="divs divRelative">Posicionamento relative</div>
-    <div class="divs divFixed">Posicionamento fixed</div>
-    <div class="divs divStatic">Posicionamento static</div>
-    <div class="divs divAbsolute">Posicionamento absolute</div>
-    <div class="divs divAlignCenter">Posicionamento central</div>
-    <div class="divs divEsquerda">Posicionamento float left - esquerda</div>
-    <div class="divs divDireita">Posicionamento float right - direita</div>
-    <p class="clear"> Parágrafo com a limpeza da propriedade float</p>
-    -->
+            <h3>Nossa Promoções</h3>
+
+            <p>Oferecer excelentes opções com ótimo custo benefício para o nosso cliente é o nosso forte.
+            Independentemente do número de pessoas, sempre temos uma oferta especial para você.</p>
+        </div>
+
+        <div id="dest1">
+            <img src="img/04.jpg" width="300" height="200">
+
+            <h3>Sabores</h3>
+
+            <p>Não sabe escolher entre os sabores de pizza salgada? Está tudo bem.Para provar o contrário, aqui vão as opções tradicionais da Pizza Prime. 
+            Além de deliciosas, são mais em conta do que as especiais e não perdem em nada no sabor.</p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <!--representa rodapé para o seu conteúdo de seção-->
+
+        <ul>
+            <li><b><a href="index.html">Home</a></b></li>
+            <li><b><a href="sabores.html">Sabores</a></b></li>
+            <li><b><a href="filiais.html">Filiais</a></b></li>
+            <li><b><a href="contato.html">Contatos</a></b></li>
+        </ul>
+
+    </footer>
 </body>
 </html>
